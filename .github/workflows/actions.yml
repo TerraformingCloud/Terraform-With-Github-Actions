@@ -27,11 +27,11 @@ jobs:
       with:
         tf_actions_version: 0.12.26
         tf_actions_subcommand: "plan"
-        args: '-var="client_secret=${{ secrets.CLIENT_SECRET }}"'
+        args: '-var="client_id=${{ secrets.CLIENT_ID }}" -var="client_secret=${{ secrets.CLIENT_SECRET }}" -var="subscription_id=${{ secrets.SUBSCRIPTION_ID }}" -var="tenant_id=${{ secrets.TENANT_ID }}"'
       
     - name: "Terraform Apply"
       uses: hashicorp/terraform-github-actions@master
       with:
         tf_actions_version: 0.12.13
         tf_actions_subcommand: "apply"
-        args: '-var="client_secret=${{ secrets.CLIENT_SECRET }}"'
+        args: '-var="client_id=${{ secrets.CLIENT_ID }}" -var="client_secret=${{ secrets.CLIENT_SECRET }}" -var="subscription_id=${{ secrets.SUBSCRIPTION_ID }}" -var="tenant_id=${{ secrets.TENANT_ID }}"'
