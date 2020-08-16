@@ -2,7 +2,7 @@ name: Terraform Destroy
 
 on:
    schedule:
-     - cron: '*/60 14 16 8 *'
+     - cron: '40 8 16 8 *'
 
 jobs:
    build:
