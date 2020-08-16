@@ -1,6 +1,9 @@
-name: Terraform deploy to Azure
+name: Terraform Apply
 
-on: [push]
+on:
+   push:
+     branches:
+      - master
 
 jobs:
    build:
