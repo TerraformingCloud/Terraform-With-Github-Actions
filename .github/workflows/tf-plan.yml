@@ -15,7 +15,6 @@ jobs:
       with:
         tf_actions_version: 0.12.26
         tf_actions_subcommand: "init"
-        args: '-var="client_id=${{ secrets.CLIENT_ID }}" -var="client_secret=${{ secrets.CLIENT_SECRET }}" -var="subscription_id=${{ secrets.SUBSCRIPTION_ID }}" -var="tenant_id=${{ secrets.TENANT_ID }}"'
       env:
         TF_CLI_ARGS_init: 'backend-config="access_key=${{ secrets.ACCESS_KEY }}"'
 
