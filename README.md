@@ -1,2 +1,3 @@
-# tf-cicd
-Automating Terraform deployments on Azure using Jenkins
+# Azure - Terraform - Github Actions
+
+**Automate infrastructure deployments on Azure with Terraform and Github Actions**
