@@ -3,9 +3,9 @@ name: Terraform Apply
 on:
    push:
      branches:
-       - master
+     - master
      paths-ignore:
-        - './*.md'
+     - './*.md'
      
 
 jobs:
