@@ -2,10 +2,10 @@ name: Terraform Apply
 
 on:
    push:
+     paths-ignore:
+     - 'README.md'
      branches:
      - master
-     paths-ignore:
-     - './*.md'
      
 
 jobs:
