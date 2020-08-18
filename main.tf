@@ -28,8 +28,8 @@ provider "azurerm" {
 
 # Create a Resource Group
 
-resource "azurerm_resource_group" "rg" {
-    name            =       "Github-Actions-RG"
-    location        =       "East US"
-}
+// resource "azurerm_resource_group" "rg" {
+//     name            =       "Github-Actions-RG"
+//     location        =       "East US"
+// }
 

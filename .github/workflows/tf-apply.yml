@@ -9,12 +9,17 @@ on:
      
 
 jobs:
-   build:
+   terraform-apply:
     runs-on: ubuntu-latest
     
     steps:
     - name: "Checkout"
       uses: actions/checkout@master
+
+    - name: Multi-Line Script
+      run: |
+        echo Hello, Vamsi!
+        echo Running Terraform Apply.
 
     - name: "Terraform Init"
       uses: hashicorp/terraform-github-actions@master

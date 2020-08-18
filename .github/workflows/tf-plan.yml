@@ -1,14 +1,23 @@
 name: Terraform Plan
 
-on: [pull_request]
+on: 
+   pull_request:
+     branches:
+     - master
 
 jobs:
-   build:
+   terraform-plan:
     runs-on: ubuntu-latest
     
     steps:
     - name: "Checkout"
       uses: actions/checkout@master
+
+    - name: Multi-Line Script
+      run: |
+        echo Hello, Vamsi!
+        echo Running Terraform Plan,
+        echo Validate and Merge into the Master branch.
 
     - name: "Terraform Init"
       uses: hashicorp/terraform-github-actions@master
