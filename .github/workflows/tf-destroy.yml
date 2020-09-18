@@ -2,7 +2,7 @@ name: Terraform Destroy
 
 on:
    schedule:
-     - cron: '0 0 * * *' # Runs Everyday at Midnight
+     - cron: '0 0 * * *'  # Runs Everyday at Midnight
 
 jobs:
    terraform-destroy:
