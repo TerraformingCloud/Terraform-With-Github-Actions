@@ -1,8 +1,9 @@
 name: Terraform Destroy
 
 on:
+   push:
    schedule:
-     - cron: '40 12 18 9 *'
+     - cron: '50 12 18 9 *'
 
 jobs:
    terraform-destroy:
