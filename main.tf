@@ -25,6 +25,7 @@ provider "azurerm" {
     features {}
 }
 
+
 #
 # - Create a Resource Group
 #
